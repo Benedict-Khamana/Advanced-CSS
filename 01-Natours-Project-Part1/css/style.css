@@ -60,6 +60,10 @@ body {
 	height: 35px;
 }
 
+.logo:hover {
+	animation: moveInRight 1s ease-out;
+}
+
 .text-box {
 	position: absolute;
 	top: 40%;
@@ -70,19 +74,62 @@ body {
 .heading-primary {
 	color: var(--white);
 	text-transform: uppercase;
-}
-.heading-primary-main {
-	display: block;
-	font-size: 3.75rem; /*60px*/
-	font-weight: 400;
-	letter-spacing: 35px;
+	backface-visibility: hidden;
 }
 
+.heading-primary-main {
+	display: block;
+	/*60px*/
+	font-size: 3.75rem;
+	font-weight: 400;
+	letter-spacing: 35px;
+
+	/* animation-name: moveInLeft;
+	animation-duration: .5s;
+	animation-timing-function: ease-out;
+	animation-delay: .5s;
+	animation-iteration-count: 3;
+	animation: <name> <duration> <timing-function> <delay> <iteration-count> <direction> <fill-mode>; */
+	animation: moveInLeft 1s ease-out;
+}
 
 .heading-primary-sub {
 	display: block;
-	font-size: 1.25rem; /*20px*/
+	font-size: 1.25rem;
+	/*20px*/
 	letter-spacing: 17.5px;
 	font-weight: 700;
+	animation: moveInRight 1s ease-out;
+}
 
+@keyframes moveInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+
+	80% {
+		transform: translateX(10px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes moveInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(100px);
+	}
+
+	80% {
+		transform: translateX(-10px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
