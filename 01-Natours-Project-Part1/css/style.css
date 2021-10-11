@@ -30,7 +30,7 @@ Dark green: #28b485
 
 html {
 	/* 10px => 10 / 16 => 0.625  */
-	font-size: 62.5%; 
+	font-size: 62.5%;
 }
 
 body {
@@ -58,21 +58,21 @@ body {
 	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-.logo-box {
+.header__logo-box {
 	position: absolute;
 	top: 4rem;
 	left: 4rem;
 }
 
-.logo {
+.header__logo {
 	height: 3.5rem;
 }
 
-.logo:hover {
+.header__logo:hover {
 	animation: moveInRight 1s ease-out;
 }
 
-.text-box {
+.header__text-box {
 	position: absolute;
 	top: 40%;
 	left: 50%;
@@ -87,7 +87,7 @@ body {
 	margin-bottom: 6rem;
 }
 
-.heading-primary-main {
+.heading-primary--main {
 	display: block;
 	/*60px*/
 	font-size: 6rem;
@@ -103,7 +103,7 @@ body {
 	animation: moveInLeft 1s ease-out;
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
 	display: block;
 	font-size: 2rem;
 	/*20px*/
@@ -153,16 +153,16 @@ body {
 	transform: scale(1.4, 1.6);
 }
 
-.btn-white {
+.btn--white {
 	background-color: var(--white);
 	color: var(--gray);
 }
 
-.btn-white::after {
+.btn--white::after {
 	background-color: var(--white);
 }
 
-.btn-animated {
+.btn--animated {
 	animation: moveInBottom .5s ease-out .75s;
 	animation-fill-mode: backwards;
 }
