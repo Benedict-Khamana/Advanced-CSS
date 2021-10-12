@@ -163,12 +163,18 @@ body {
   color: #777; }
   .btn--white::after {
     background-color: #fff; }
+  .btn--white:focus {
+    outline: none;
+    border: 3px solid #7bd298; }
 
 .btn--green {
   background-color: #55c57a;
   color: #fff; }
   .btn--green::after {
     background-color: #55c57a; }
+  .btn--green:focus {
+    outline: none;
+    border: 3px solid #3bac60; }
 
 .btn--animated {
   animation: moveInBottom .5s ease-out .75s;
@@ -192,6 +198,10 @@ body {
 .btn-text:active {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
+
+.btn-text:focus {
+  outline: none;
+  border: 3px solid #3bac60; }
 
 .card {
   perspective: 150rem;
@@ -333,6 +343,44 @@ body {
     color: transparent; }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
+  transition: all .5s ease-in-out; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #55c57a; }
+    .form__input:focus:invalid {
+      border-bottom: 3px solid #ff7730; }
+  .form__input::placeholder {
+    color: #999; }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: .7rem;
+  display: block;
+  transform: translateY(0);
+  transition: all .2s ease-in-out; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
 
 .story {
   width: 75%;
