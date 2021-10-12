@@ -125,7 +125,7 @@
 	}
 
 	&__details {
-		color: $color-gray-dark-1;
+		color: $color-grey-dark-1;
 		padding: 3rem;
 
 		ul {
@@ -140,7 +140,7 @@
 			padding: 1rem;
 
 			&:not(:last-child) {
-				border-bottom: 1px solid $color-gray-light-2;
+				border-bottom: 1px solid $color-grey-light-2;
 			}
 		}
 	}
