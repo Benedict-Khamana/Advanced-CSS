@@ -8,8 +8,32 @@
 }
 
 html {
-	/* 10px => 10 / 16 => 0.625  */
+	/* 10px => 10 / 16 => 0.625 => 1rem = 10px */
 	font-size: 62.5%;
+
+	// ? width < 1200 ?
+	@include respond(tab-land) {
+		/* 9px => 9 / 16 => 0.5625 => 1rem = 9px */
+		font-size: 56.25%;
+	}
+
+	// ? width < 900 ?
+	@include respond(tab-port) {
+		/* 16 * 0.5 => 8 => 1rem = 8px */
+		font-size: 50%;
+	}
+
+	// ? width < 600 ?
+	@include respond(phone) {
+		/* 1rem = 4.8px */
+		font-size: 30%;
+	}
+	
+	// ? width > 1800 ?
+	@include respond(big-desktop) {
+		/* 12 / 16 => .75 => 1rem = 12px */
+		font-size: 75%;
+	}
 }
 
 body {

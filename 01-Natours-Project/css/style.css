@@ -1,3 +1,20 @@
+/*
+//! Desktop FIRST
+
+//* 0-600px: Phone
+//* 600-900px: Tablet portrait
+//* 900-1200px: Tablet landscape
+//* [1200-1800] is where our normal styles apply
+//* 1800px + ...: Big Desktop
+
+*  $breakpoint argument choices:
+?- phone
+?- tab-port
+?- tab-land
+?- big-desktop
+
+! 1em = 16px
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -35,8 +52,24 @@
   box-sizing: inherit; }
 
 html {
-  /* 10px => 10 / 16 => 0.625  */
+  /* 10px => 10 / 16 => 0.625 => 1rem = 10px */
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      /* 9px => 9 / 16 => 0.5625 => 1rem = 9px */
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      /* 16 * 0.5 => 8 => 1rem = 8px */
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      /* 1rem = 4.8px */
+      font-size: 30%; } }
+  @media (min-width: 112.5em) {
+    html {
+      /* 12 / 16 => .75 => 1rem = 12px */
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
