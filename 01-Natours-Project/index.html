@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,9 +13,11 @@
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
 	<title>Natours | Exciting tours for adventurous people</title>
+
 </head>
 
 <body>
+
 	<div class="navigation">
 		<input type="checkbox" class="navigation__checkbox" id="navi-toogle">
 		<label for="navi-toogle" class="navigation__button">
@@ -33,6 +36,7 @@
 			</ul>
 		</nav>
 	</div>
+
 	<header class="header">
 		<div class="header__logo-box">
 			<img class="header__logo" src="img/logo-white.png" alt="logo">
@@ -45,6 +49,7 @@
 			<a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
 		</div>
 	</header>
+
 	<main>
 		<section class="section-about">
 			<div class="u-center-text u-margin-bottom-big">
@@ -78,6 +83,7 @@
 				</div>
 			</div>
 		</section>
+
 		<section class="section-features">
 			<div class="row">
 				<div class="col-1-of-4">
@@ -118,6 +124,7 @@
 				</div>
 			</div>
 		</section>
+
 		<section class="section-tours" id="section-tours">
 			<div class="u-center-text u-margin-bottom-big">
 				<h2 class="heading-secondary">
@@ -220,6 +227,7 @@
 				<a href="#" class="btn btn--green">Discover all tours</a>
 			</div>
 		</section>
+
 		<section class="section-stories">
 			<div class="bg-video">
 				<video class="bg-video__content" autoplay muted loop>
@@ -270,6 +278,7 @@
 				<a href="#" class="btn-text">Read all stories &Rarr;</a>
 			</div>
 		</section>
+
 		<section class="section-book">
 			<div class="row">
 				<div class="book">
@@ -313,9 +322,14 @@
 			</div>
 		</section>
 	</main>
+
 	<footer class="footer">
 		<div class="footer__logo-box">
-			<img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+			<picture class="footer__logo">
+				<source srcset ="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" 
+								media="(max-width: 37.5em)">
+				<img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" class="footer__logo">
+			</picture>
 		</div>
 		<div class="row">
 			<div class="col-1-of-2">
@@ -365,36 +379,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- <section class="grid-test">
-		<div class="row">
-			<div class="col-1-of-2">Col 1 of 2</div>
-			<div class="col-1-of-2">Col 1 of 2</div>
-		</div>
-		<div class="row">
-			<div class="col-1-of-3">Col 1 of 3</div>
-			<div class="col-1-of-3">Col 1 of 3</div>
-			<div class="col-1-of-3">Col 1 of 3</div>
-		</div>
-		<div class="row">
-			<div class="col-1-of-3">Col 1 of 3</div>
-			<div class="col-2-of-3">Col 2 of 3</div>
-		</div>
-		<div class="row">
-			<div class="col-1-of-4">Col 1 of 4</div>
-			<div class="col-1-of-4">Col 1 of 4</div>
-			<div class="col-1-of-4">Col 1 of 4</div>
-			<div class="col-1-of-4">Col 1 of 4</div>
-		</div>
-		<div class="row">
-			<div class="col-1-of-4">Col 1 of 4</div>
-			<div class="col-1-of-4">Col 1 of 4</div>
-			<div class="col-2-of-4">Col 2 of 4</div>
-		</div>
-		<div class="row">
-			<div class="col-1-of-4">Col 1 of 4</div>
-			<div class="col-3-of-4">Col 3 of 4</div>
-		</div>
-	</section> -->
+
 </body>
 
 </html>
