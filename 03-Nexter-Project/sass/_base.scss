@@ -1,4 +1,4 @@
-// COLOR VARIABLES
+// COLORS
 $color-primary: #c69963;
 $color-primary-dark: #b28451;
 
@@ -9,10 +9,12 @@ $color-grey-light-2: #aaa;
 
 $color-grey-dark-1: #54483a;
 $color-grey-dark-2: #6d5d4b;
+// END COLORS
 
-// FONT VARIABLES
+// FONT
 $font-primary: "Nunito", sans-serif;
 $font-display: "Josefin Sans", sans-serif;
+// END FONT
 
 // GLOBAL RESET
 *,
@@ -32,4 +34,9 @@ body {
 	font-family: $font-primary;
 	color: $color-grey-dark-2;
 	line-height: 1.6;
+}
+
+.container {
+	display: grid;
+	grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
 }
